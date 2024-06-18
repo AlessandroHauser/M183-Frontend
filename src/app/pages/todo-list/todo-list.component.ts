@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Todo} from "../../entities/Todo";
 import {Observable} from "rxjs";
-import { Status } from '../../entities/Status';
+import {Status} from '../../entities/Status';
 import {MatSnackBar} from "@angular/material/snack-bar";
 import {ClientService} from "../../services/client.service";
 

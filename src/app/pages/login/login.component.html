@@ -13,7 +13,7 @@
         </button>
       </div>
     }
-    @if (isAuthenticated()) {
+    @if (!isAuthenticated()) {
       <div>
         <button (click)="login()" color="warn" mat-button>
           <mat-icon>login</mat-icon>
