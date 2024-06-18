@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {LoginComponent} from "./pages/login/login.component";
+import {MatDialog} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Modul183';
+  constructor(private dialog: MatDialog) {
+  }
+
+  login() {
+    this.dialog.open(LoginComponent);
+  }
 }

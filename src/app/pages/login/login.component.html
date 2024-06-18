@@ -1,0 +1,24 @@
+<h1>AniClothing</h1>
+<h2>Willkommen!</h2>
+<img src="./../../../assets/logo.png" alt="very good image">
+<mat-card>
+  <mat-card-title style="margin: 10px;">Login</mat-card-title>
+  <mat-card-content>
+    @if (isAuthenticated()) {
+      <div>
+        <mat-chip style="margin: 10px;">{{ username }}</mat-chip>
+        <button (click)="logout()" color="warn" mat-button>
+          <mat-icon>logout</mat-icon>
+          Logout
+        </button>
+      </div>
+    }
+    @if (isAuthenticated()) {
+      <div>
+        <button (click)="login()" color="warn" mat-button>
+          <mat-icon>login</mat-icon>
+        </button>
+      </div>
+    }
+  </mat-card-content>
+</mat-card>
